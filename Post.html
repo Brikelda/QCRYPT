@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>QCRYPT</title>
+    <link rel="stylesheet" type="text/css" href="Gen.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section class="intro" id="intro">
+
+        <div class="content">
+            <h3 style="margin-left:470px;">POST QUANTUM</h3>
+
+        </div>
+        <div class="image">
+            <img src="image/Q-17.jpg" />
+        </div>
+    </section>
+    <!----hero Section start---->
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>Q</span>CRYPT</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+
+            <a href="Gen.html">General Information</a>
+            <a href="Protocols.html">Applications</a>
+            <a href="Post.html">Post Quantum</a>
+
+            <a href="About.html">About</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+
+
+
+    <!----About section start---->
+    <section class="about">
+        <div class="main">
+            <img src="image/Q-23.png">
+            <div class="about-text">
+
+                <h5>Introduction to <span>Post Quantum Cryptography</span></h5>
+                <p>Cryptography is essential for the security of online communication, cars and implanted medical devices. However, many commonly used cryptosystems will be completely broken once large quantum computers exist. Post-quantum cryptography is cryptography under the assumption that the attacker has a large quantum computer. A quantum computer is a computer that relies on quantum level phenomena to function, instead of having bits that flip to 1 and 0, it has the qubits which make the computation in a very different way from the computation that are done these days. These computers will be able to do a whole bunch of different things and help us to solve a lot of problems that are difficult to solve with classical computers, but at the same time they have a major side effect from the security point of view: this big computer will be able to break almost all the cryptography that’s in use today using public key cryptography (like asymmetric cryptography) which is used everywhere. Quantum computers can force malicious codes into enterprises’ or even personal computers and still all the sensitive and confidential data.</p>
+                <p>That being said, it is a need to replace the classical cryptography before these machines are built and the replaced should be done with something that will be able to resist these quantum computers, because most of the exchange of data based on keys (like asymmetric ones) can be easily broken by quantum machines. This is why it is required to think of measures how to protect important data so that the future quantum machines will not destroy them. Post-Quantum Cryptography involves these measures, like finding new algorithms that could resist quantum computers. Responsible for this process is NIST, which is working on bringing as many sophisticated as possible algorithms for PQC (Post-Quantum Cryptography), a competition which will short-list the best algorithms by 2024.</p>
+                <p>However, these new algorithms will not be easy to implement, like replacing the old algorithm with the new one. There’s going to be different algorithms suitable for different use-cases, which means there should be a computation beforehand to choose which algorithm is suitable for which case.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="main">
+            <img src="image/Q-24.png">
+            <div class="about-text">
+
+                <h5>Organisations and <span>Post Quantum Cryptography</span></h5>
+                <p>Quantum computers are supposed to break modern public key cryptography because of Shor's algorithm. In conclusion, these cryptosystems should be replaced by Quantum-resistant algorithms, also known as post-quantum cryptography (PQC) algorithms, as previously discussed. The scope of PQC research has quadrupled over the past two decades, leading for creating a large variety of algorithms that are expected to be resistant to quantum attacks. However, even with the instructions from these significant effort, the risk has not gone away: there are billions of old and new devices that the need to switch to the PQC suite of algorithms, leading to a multi-decade transition process that must take into account aspects such as security, algorithm performance, convenience of secure implementation, compliance and more. </p>
+                <p>Given its low cost, ease of integration into current infrastructure plus the whole set of cryptographic features, there has been a natural convergence of standardization bodies and organizations towards PQC. As such, it’s recommended that organizations interested in protecting their systems and users against quantum attacks should adopt PQC (over quantum cryptography) as their main quantum protection strategy. For those organizations that have not started integrating PQC in their systems or even planning for it, it’s highly recommended starting their efforts as soon as possible. Those organizations and enterprises with sensitive data with time value exceeding five years should consider PQC immediately. The SNDL attack is already practicable, so in this context, such organizations are already late and at increasing risk. Despite the natural pressure from industry, the standardization bodies should have a clear focus on creating standards with a security-first mindset. A standard that is published quickly but that lacks clarity brings about many more problems than a standard that is published later.</p>
+               
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="main">
+            <img src="image/Q-25.png">
+            <div class="about-text">
+
+                <h5>IoT and <span>Post Quantum Cryptography</span></h5>
+                <p>
+                    Internet of Things (IoT)-based applications like smart grid, smart cities, agriculture and so on, usually make use of resource-constrain devices. In order to secure these devices, protocols and security measures should be taken into consideration. Because there is a high risk of future quantum machines’ attacks, lightweight post-quantum mechanisms are required to be integrated (like lattice-based cryptography, code-based cryptography, hush-based signatures etc).
+                </p>
+                <p>
+                    Various challenges in traditional resource-constrained IoT devices, like: fast evolving quantum computing approaches, small key sizes of IoT networks, difficulty in synchronizing computing servers with IoT devices, high resource-consumption of post-quantum algorithms, optimization of quantum algorithms for IoT nodes for IoT devices, lack of network architectures and more, make it even more difficult to adapt IoT with PQC.
+                </p>
+                <p>
+                    However, researches* have been made to integrate PQC with IoT applications, were can be mentioned:<br/>
+                    •	Since PQC and the blockchain technology have a lot in common, an integration between them can provide transparency, fault tolerance, resistance from quantum attacks and adaptability to a large set of organizations.<br />
+                    •	To increase the adaptability of IoT with existing QC schemes, there is a need to put more effort to the protocols that are not touched yet, which means considering PQC developments.<br />
+                    •	Providing a reliable infrastructure and hardware architecture for the PQC-IoT integration.<br />
+                    •	Risk assessment evaluation regarding PQC and IoT should be taken into account, so that the IoT application can work into its research direction.<br />
+                    •	Cost estimation for IoT applications, deriving from the scarcity of quantum resources. This cost includes not only infrastructure, but also staff training.<br />
+                    •	Independence of IoT data from its infrastructure, in order to be protected from possible vulnerabilities and consequently attacks.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>About </h3>
+                <p>Quantum Cryptography informative website made for academic purposes by a business informatics student studying in Albania!</p>
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+
+                <a href="#">General Information</a>
+                <a href="#">Main Protocols</a>
+                <a href="#">Post Quantum</a>
+
+                <a href="About.html">About</a>
+            </div>
+            <div class="box">
+                <h3>Follow Me</h3>
+
+                <a href="https://www.instagram.com/brikelda_sema/">Instagram</a>
+
+                <a href="https://www.linkedin.com/in/brikelda-sema-20076420a/">LinkedIn</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit"> Created by <span> BRIKELDA SEMA </span> | All rights reserved! </h1>
+
+    </section>
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="Part3.js"></script>
+
+
+
+
+</body>
+</html>

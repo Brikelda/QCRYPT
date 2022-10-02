@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>QCRYPT</title>
+    <link rel="stylesheet" type="text/css" href="Gen.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section class="intro" id="intro">
+
+        <div class="content">
+            <h3 style="margin-left:450px;">MAIN PROTOCOLS</h3>
+
+        </div>
+        <div class="image">
+            <img src="image/Q-17.jpg" />
+        </div>
+    </section>
+    <!----hero Section start---->
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>Q</span>CRYPT</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+
+            <a href="Gen.html">General Information</a>
+            <a href="Protocols.html">Applications</a>
+            <a href="Post.html">Post Quantum</a>
+
+            <a href="About.html">About</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+
+
+
+    <!----About section start---->
+    <section class="about">
+        <div class="main">
+            <img src="image/Q-20.png">
+            <div class="about-text">
+
+                <h5>Quantum <span>Coin Flipping</span></h5>
+                <p>Coin Flipping is a basic cryptographic primitive with frequent applications. In this case two non-believing parties separated by distance want to agree on a random bit. Therefore, it is impossible to have a flipping protocol with fraud probability less than one, unless accounting assumptions are taken into account. Put another way, a dishonest player can force the outcome of a coin flip with probability one. But a quantum coin flip is the solution like this between two parties that do not trust each-other.</p>
+                <p>
+                    Quantum Coin Flip is based on the principle of quantum physics, known as wave-function collapse, which states that measuring a quantum object, like a tiny particle, changes it
+                    For example, photons have a quantum property called polarization, as mentioned before, or a certain spin state (4 possible spin states). Normal light is unpolarized, because it has waves of all different and random polarizations mixed together. But there is a way to make light to wave in one particular direction by passing it through a filter. If we pass photons that are vertically polarized through a vertical filter, they’ll come out waving up and down (still vertically), but if we try to pass the same photons through a horizontal filter, it’ll be blocked. Photons can’t pass through filters that are at 90° angles to their polarization. However, if we try to pass photons with a 45° of difference (like vertical photons to diagonal filter), half of the time it gets through and half of the time it gets blocked, and this is completely random. And the photons that make it through are now diagonally polarized (from being vertically in the first time), which means the act of measuring the light’s polarization changes it.
+                    So when vertically polarized photons come to the diagonal filter, they act completely based on chance, half of them make it through and half of them don’t. This can be used, according to the protocol, to make sure that none of the parties cheats.
+                </p>
+                <p>
+                    Let’s say party A will send the stream of bits to party B. Party A at first has to choose one type of orientation: rectilinear (vertical & horizontal) or diagonal. Then using only that orientation, party A will send a stream of photons to party B, which will encode a random sequence of 1s and 0s. Party B is going to record these 1s and 0s and is going to guess which orientation did party A chose. If party B finds it correctly, it wins; if not, party A wins. For example, let’s pretend party A chose the rectilinear measurement orientation and make a stream of 1s and 0s, then match these into photons by saying for example, a vertically polarized photon means a 1, and a horizontally polarized photon means a 0. Party B doesn’t know which orientation party A chose, so to find out, it alternates randomly between using a rectilinear and a diagonal filter. 
+                    After finishing measuring the photons, it’s time to guess the orientation party A chose, and as heads and tails (during coin flipping) there is a 50/50 chance of getting it right. Let’s say that party B did not find the right orientation (because said diagonal), so it lost. To prove that it’s not cheating, party A reads the sequence of 1s and 0s that send to party B before converting them into photons, and these sequence must match with that that party B got using the rectilinear filter. In this way, there’s no way to rig the system, especially when using a lot of photons.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="main">
+            <img src="image/Q-21.png">
+            <div class="about-text">
+
+                <h5>Space <span>Quantum Communication</span></h5>
+                <p>
+                    The ability of QKD to link and transmit information in an extremely secure way has found its use even in space. Through several experiments was proved that the atmosphere was suitable not only for classical optical communication, but also for the quantum one. However, this channel of communication doesn’t prevent losses, which come because of asymmetric atmosphere, ionizing radiation, dynamic position of the orbit and so on. Several experiments have been implemented on Low Earth Orbit (LEO) and Higher Earth Orbits like MEO and GEO. Low Earth Orbit reaches a maximal altitude of 2000 km and was the first one to be chosen to try out the experiment, because of the shorter distance and the lower ionizing radiation, compared to higher-level orbits. How the information transmission works? Let’s pretend that two points on Earth want to communicate (at a far distance) so they used as an intermediary a satellite. Point A send a train of qubit pulses to the satellite with a repetition rate at 100 MHz. These pulses are reflected back from the satellite at the single photon level, mimicking a QKD source. In order to achieve synchronization (so that the key is sent as it should to point B), a train of bright satellite laser ranging (SLR) pulses at a repetition rate 10 Hz is implemented. The photons arrive to the destination and then is as normal as the typical quantum communication. What should be taken into consideration and should be very careful of is the angle at which the train of pulses should be sent from point A to the satellite, since it is known that the satellite moves through the orbit and the orbit angle is about 10 degrees. However, doing practical applications of QC has its own limitations.
+                </p>
+               
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="main">
+            <img src="image/Q-22.png">
+            <div class="about-text">
+
+                <h5>Quantum-Safe <span>Certificates</span></h5>
+                <p>
+                    PKI which is Public Key Infrastructure, generates and distributes digital certificates to protect the root of trust of security of digital network systems. To propagate secure digital networks in the quantum era, PKI must pass to use quantum resistant cryptographic algorithms. The cryptography community is developing quantum-resistant primitives/algorithms, studying and analyzing them for cryptanalysis and improvements.
+                </p>
+                <p>By migrating PKI solutions to quantum-safe crypto algorithms, enterprises will be faced with a lot of challenges. For most of the enterprises, this process is simply not viable, since they need a solution that enables a gradual and low-risk migration. And when this migration needs to be done, it should be taken into consideration the fact that quantum-safe cryptography requires quantum-safe certificates. There are 4 types of certificates that vary according to the purpose and algorithm supported:</p>
+                <p>
+                    <b>Traditional PKI Certificates</b><br />
+                    These type of certificates are used by the PKI systems nowadays and the term “traditional” refers to the fact that these certificates are based on the traditional ECC (Error Correction Code) or RSA (Rivest-Shamir-Adleman) algorithms. Traditional PKI Certificates provide effective protection against nowadays’ computing attacks, but in the need future they’ll probably to useless because of quantum attacks.<br/>
+
+                    <b>Quantum-Safe Certificates</b><br />
+                    These are X.509 certificates that used quantum-safe encryption algorithms, some of which are already provided by NIST. But migrating from traditional algorithms to quantum-safe ones, means that quantum-safe certificates need to provided, which will require the update of the existing enterprise system.<br />
+
+                    <b>Hybrid Certificates </b><br />
+                     Hybrid certificates contain both traditional key and signature and quantum-safe key and signature, because in some enterprises that have systems with multiple components, the migration and consequently the upgrade from traditional to quantum-safe certificates and algorithms all at the same time is not possible. By using the hybrid certificates, these companies can use both types of keys and signature (so traditional and quantum-safe) until all the upgrade is done, and they can switch totally to Quantum-Safe Certificates.<br />
+                    <b>Composite Certificates</b><br />
+                     Composite ones also use multiple keys and signatures, but with the purpose to address the fact that individual encryption algorithms available now, may later prove to be insecure. That being said, a multi-key cryptographic solution can provide enhanced levels of security. If one of the keys proves to have a vulnerability, the system is still secure. This might sound as a good way to secure the system during the migration process, but at the same composite certificates require additional computer power, since all the data needs to be encrypted with multiple keys.<br />
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>About </h3>
+                <p>Quantum Cryptography informative website made for academic purposes by a business informatics student studying in Albania!</p>
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+
+                <a href="#">General Information</a>
+                <a href="#">Main Protocols</a>
+                <a href="#">Post Quantum</a>
+
+                <a href="About.html">About</a>
+            </div>
+            <div class="box">
+                <h3>Follow Me</h3>
+
+                <a href="https://www.instagram.com/brikelda_sema/">Instagram</a>
+
+                <a href="https://www.linkedin.com/in/brikelda-sema-20076420a/">LinkedIn</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit"> Created by <span> BRIKELDA SEMA </span> | All rights reserved! </h1>
+
+    </section>
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="Part3.js"></script>
+
+
+
+
+</body>
+</html>

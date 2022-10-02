@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>QCRYPT</title>
+    <link rel="stylesheet" type="text/css" href="Gen.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section class="intro" id="intro">
+
+        <div class="content">
+            <h3>GENERAL INFORMATION</h3>
+           
+        </div>
+        <div class="image">
+            <img src="image/Q-17.jpg" />
+        </div>
+        </section>
+        <!----hero Section start---->
+        <header>
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <a href="#" class="logo"><span>Q</span>CRYPT</a>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+
+                <a href="Gen.html">General Information</a>
+                <a href="Protocols.html">Applications</a>
+                <a href="Post.html">Post Quantum</a>
+
+                <a href="About.html">About</a>
+            </nav>
+
+            <div class="icons">
+                <i class="fas fa-search" id="search-btn"></i>
+
+            </div>
+
+            <form action="" class="search-bar-container">
+                <input type="search" id="search-bar" placeholder="search here...">
+                <label for="search-bar" class="fas fa-search"></label>
+            </form>
+
+        </header>
+
+
+
+
+        <!----About section start---->
+        <section class="about">
+            <div class="main">
+                <img src="image/Q-14.png">
+                <div class="about-text">
+
+                    <h5>History of a <span>Beautiful Idea</span></h5>
+                    <p>For ages, mathematicians have searched for a system that would allow two people to exchange messages in absolute secrecy. Quantum mechanics has now joined forces with cryptology to achieve a major step in that direction.</p>
+                    <p>Despite mentioning advanced cryptographic techniques since 1939, the idea of Quantum Cryptography was first proposed only in 1970s by Wiesner (1983), Charles H. Bennett from IBM (1984) and Gilles Brassard from Montreal University (1985). At the time, it was introduced as a simple, probably incomplete idea. In the paper, they showed how to store and transmit messages by encoding them in conjugate observables, such as linear and circular polarization of light, so that the destination host can decode it. This idea was illustrated with a design of unforgeable bank notes: quantum money, which served as a building stone to the next theories of quantum cryptography. The most significant characteristics of quantum mechanics are the existence of indivisible quanta and of entangled systems, which are at the root of Quantum Cryptography (QC) which could very well be the first commercial application of quantum physics at the individual quantum level.</p>
+                    <p>
+                        Before quantum cryptography was evolved, the world used as a security weapon classical cryptography (which is still used), which unlike QC that is based on quantum physics, it is based on mathematics and computational difficulty of factorizing large numbers. This technic had (and still has) a lot of benefits, but with the development of classical cryptography, information theory, quantum physics and quantum optics as mature sciences, the importance of Quantum Cryptography’s idea as an engineering security tool came into light.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="main">
+                <img src="image/Q-15.png">
+                <div class="about-text">
+
+                    <h5>Quantum <span>Cryptography</span></h5>
+                    <p>
+                        The art of hiding information in a string of bits meaningless to any unauthorized party is Cryptography. To achieve this goal encryption is used: 1 message is combined according to an algorithm with some additional secret information - the key - to give a cryptogram. Alice is the one who encrypts and transmits the message while Bob is the one who receives it and Eve is the malicious eavesdropper. For a cryptosystem to be considered secure, it must be impossible to decrypt the cryptogram without Bob's key.
+                    </p>
+                    <p>
+                        This requirement is relaxed, requiring only that the system be sufficiently difficult to crack. It is said that the message should be protected as long as the information it contains is valid.
+                        There are two main classes of crypto-systems, public key and private key:
+                    </p>
+                    <p>
+                        Public key systems or so-called one-way functions: given a given x, it is easy to compute f(x), but difficult to do the reverse, that is, to compute x from f(x). "Hard" means that the task is going to take a time, which grows exponentially with the number of input bits. For example, the RSA cryptosystem (Rivest, Shamir, Adleman) is based on the factorization of large integers. Anyone can calculate 137×53 in a few seconds, but it can take a while to find the prime factors of 28 907.
+                        To transmit a message, Bob chooses the private key and calculates a public key from it. Now Alice can encrypt the message by using the public key and transmit it to Bob, who decrypts it with the private key. Public key systems are convenient and have become popular over the past twenty years, but they also have potential drawbacks. To this day, no one knows for sure whether factoring is really hard or not.
+                    </p>
+                    <p>Nowadays, Quantum Cryptography can be defined as a technology and science that uses quantum physics to secure the distribution of encrypted messages by sending photons of light, called quantum particles, across an optical link. The most important and most promising task of quantum cryptography is QKD (Quantum Key Distribution), which is often identified with QC, and provides a way of sharing secret keys that are necessary for cryptographic protocols, ensuring that they remain private between the communicating parties.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="main">
+                <img src="image/Q-16.png">
+                <div class="about-text">
+
+                    <h5>Quantum Key Distribution <span>(QKD)</span></h5>
+                    <p>The most common and traditional way of explaining how QKD works is through a communication set between a random sender, named Alice, and a random receiver, named Bob. Let’s pretend that Alice codes information into individual photons which she sends to Bob. These photons, when they travel through the quantum channel, they have a specific angle, representing a qubit (quantum bit): the quantum bit is 1 when the angle of the photons is vertical (90) or diagonal at +45, and with the value 0 when the angle is horizontal (180) or diagonal at -45. This sequence of ones and zeros make up the key that can decrypt the encrypted message that Alice wants to send to Bob. </p>
+                    <p>The encrypted message can be public (seen by other parties) but without the key it is unreadable or not understandable. What’s important is that no one sees the key. With QKD the key is a stream of photons. Photons have a property called spin, which can be changed when it passes through a filter. </p>
+                    <p>There are four filters: vertical, horizontal and two diagonal. These are lumped into two groups: the diagonal scheme and the rectilinear scheme. As mentioned before, a photon with vertical or +45 means 1, and horizontal and -45 spin means 0. So, there can be one than one combination of photons to send a particular sequence of 1s and 0s. Alice starts sending Bob photons, switching between filters at random. Now let’s pretend that an eavesdropper, called Eve, wants to steal the information. The only way Eve can measure a photons spin is by passing it through a filter. If Eve measures a photon with 90 spin with a rectilinear filter, she will guess correctly that it has vertical spin and note down a 1, but if she uses the diagonal filter the photon spin will be altered as it passed though. She now incorrectly reads a 0. The same will happen if she measures a diagonal photon with the rectilinear filter. Unless Eve knows beforehand which filter to use, she runs a probable risk of changing the spin, and because Alice is switching between filters at random, shell get it wrong about half the time. But Bob is in the same dilemma: he doesn’t know which filter to use. This was a hard-to-solve problem, but a solution was found.</p>
+                    <p>
+                        After Alice has sent the key, she calls Bob and tells him which scheme she used for what photon, by telling him whether the filter was rectilinear or diagonal. If he used the right filter, they both keep the digit, if he chose the wrong filter, they get rid of it. According to probability, Bob gets about half wrong, so they keep the half he got right. This is the key that can decrypt the message. Even if Eve has access to the conversation, it will not help her. Say for the first photon Bob and Alice used a rectilinear filter, so they keep the digit. Eve used the wrong filter and she can’t tell if it’s a 1 or 0 from just which scheme Alice and Bob used. For the second photon Alice used a diagonal filter, so did Eve, but Bob used a rectilinear filter, so they get rid of the answer. Consequently, Alice and Bob have a totally secure key and Eve a bunch of useless 1s and 0s.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer section  -->
+
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>About </h3>
+                    <p>Quantum Cryptography informative website made for academic purposes by a business informatics student studying in Albania!</p>
+                </div>
+
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+
+                    <a href="#">General Information</a>
+                    <a href="#">Main Protocols</a>
+                    <a href="#">Post Quantum</a>
+
+                    <a href="About.html">About</a>
+                </div>
+                <div class="box">
+                    <h3>Follow Me</h3>
+
+                    <a href="https://www.instagram.com/brikelda_sema/">Instagram</a>
+
+                    <a href="https://www.linkedin.com/in/brikelda-sema-20076420a/">LinkedIn</a>
+                </div>
+
+            </div>
+
+            <h1 class="credit"> Created by <span> BRIKELDA SEMA </span> | All rights reserved! </h1>
+
+        </section>
+
+
+
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- custom js file link  -->
+        <script src="Part3.js"></script>
+
+
+
+
+</body>
+</html>
